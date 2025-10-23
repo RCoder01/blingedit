@@ -1,5 +1,5 @@
 scoreboard players add @e _age 1
-summon area_effect_cloud
+summon marker
 scoreboard players add @e _age 1
 execute store result score Global _start_pos_0 run data get entity @e[limit=1,scores={_age=1}] Pos[0] 1000
 execute store result score Global _start_pos_1 run data get entity @e[limit=1,scores={_age=1}] Pos[1] 1000

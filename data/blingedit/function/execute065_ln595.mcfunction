@@ -1,6 +1,6 @@
-scoreboard players operation Global rx = @e[type=minecraft:area_effect_cloud,sort=random,limit=1,scores={rand_x=1..}] val
-scoreboard players operation Global ry = @e[type=minecraft:area_effect_cloud,sort=random,limit=1,scores={rand_y=1..}] val
-scoreboard players operation Global rz = @e[type=minecraft:area_effect_cloud,sort=random,limit=1,scores={rand_z=1..}] val
+scoreboard players operation Global rx = @e[type=minecraft:marker,sort=random,limit=1,scores={rand_x=1..}] val
+scoreboard players operation Global ry = @e[type=minecraft:marker,sort=random,limit=1,scores={rand_y=1..}] val
+scoreboard players operation Global rz = @e[type=minecraft:marker,sort=random,limit=1,scores={rand_z=1..}] val
 scoreboard players operation Global fil_scratch6 = Global _rand_min_0
 scoreboard players operation Global fil_scratch7 = Global _rand_min_1
 scoreboard players operation Global fil_scratch8 = Global _rand_min_2

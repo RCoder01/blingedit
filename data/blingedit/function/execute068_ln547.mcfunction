@@ -13,10 +13,10 @@ scoreboard players operation Global random_replace = @s random_replace
 bossbar set progress players @s
 function blingedit:store_tile_drops
 scoreboard players add @e _age 1
-summon minecraft:area_effect_cloud ~ ~ ~ {Duration:-1,Age:-2147483648,WaitTime:-2147483648}
+summon minecraft:marker ~ ~ ~
 scoreboard players add @e _age 1
 execute as @e[scores={_age=1}] run function blingedit:execute067_ln579
 function blingedit:restore_tile_drops
-kill @e[type=minecraft:area_effect_cloud,scores={rand_x=1..}]
-kill @e[type=minecraft:area_effect_cloud,scores={rand_y=1..}]
-kill @e[type=minecraft:area_effect_cloud,scores={rand_z=1..}]
+kill @e[type=minecraft:marker,scores={rand_x=1..}]
+kill @e[type=minecraft:marker,scores={rand_y=1..}]
+kill @e[type=minecraft:marker,scores={rand_z=1..}]

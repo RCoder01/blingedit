@@ -1,6 +1,6 @@
 execute as @s run function blingedit:get_cursor_position
 scoreboard players add @e _age 1
-summon area_effect_cloud
+summon marker
 scoreboard players add @e _age 1
 execute store result entity @e[limit=1,scores={_age=1}] Pos[0] double 0.001 run scoreboard players get Global _cursor_0
 execute store result entity @e[limit=1,scores={_age=1}] Pos[1] double 0.001 run scoreboard players get Global _cursor_1

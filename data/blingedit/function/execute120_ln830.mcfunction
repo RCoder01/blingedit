@@ -23,7 +23,7 @@ execute if score Global rotation matches 270..270 run function blingedit:execute
 execute if score Global flip_x matches 1.. run scoreboard players operation Global dest_start_x = Global flipped_x
 execute if score Global flip_z matches 1.. run scoreboard players operation Global dest_start_z = Global flipped_z
 scoreboard players add @e _age 1
-summon minecraft:area_effect_cloud ~ ~ ~ {Duration:-1,Age:-2147483648,WaitTime:-2147483648}
+summon minecraft:marker ~ ~ ~
 scoreboard players add @e _age 1
 execute as @e[scores={_age=1}] run function blingedit:execute119_ln908
 function blingedit:restore_tile_drops

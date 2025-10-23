@@ -5,7 +5,7 @@ execute unless score @s edit matches 1.. run scoreboard players set @s edit 0
 scoreboard players operation Global mai_scratch1 = @s edit
 scoreboard players operation @s prev_edit = Global mai_scratch1
 scoreboard players set @s edit 0
-scoreboard players set @s[nbt={"SelectedItem":{tag:{display:{Name:"{\"text\":\"BlingEdit\"}"}}}}] edit 1
+scoreboard players set @s[nbt={"SelectedItem":{components:{'minecraft:custom_name':'BlingEdit'}}}] edit 1
 scoreboard players set @s carrot_on_stick 0
 scoreboard players set @s[nbt={"SelectedItem":{id:"minecraft:carrot_on_a_stick"}}] carrot_on_stick 1
 scoreboard players set Global click 0
@@ -36,7 +36,7 @@ execute if score @s state matches 7..7 at @s unless block ~ ~ ~ minecraft:air as
 execute if score @s state matches 10..10 at @s unless block ~ ~ ~ minecraft:air run function blingedit:execute212_ln1706
 execute as @s run function blingedit:get_cursor_position
 scoreboard players add @e _age 1
-summon area_effect_cloud
+summon marker
 scoreboard players add @e _age 1
 execute store result entity @e[limit=1,scores={_age=1}] Pos[0] double 0.001 run scoreboard players get Global _cursor_0
 execute store result entity @e[limit=1,scores={_age=1}] Pos[1] double 0.001 run scoreboard players get Global _cursor_1
