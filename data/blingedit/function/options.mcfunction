@@ -1,4 +1,4 @@
 tellraw @s [""]
 tellraw @s ["",{"text":"BlingEdit Options:"}]
-tellraw @s ["",{"text":"Region Particle Outline: "},{"text":"[On]","clickEvent":{"action":"run_command","value":"/function blingedit:particles_on"},"color":"green"},{"text":" ","color":"green"},{"text":"[Off]","clickEvent":{"action":"run_command","value":"/function blingedit:particles_off"},"color":"red"}]
+tellraw @s ["",{"text":"Region Particle Outline: "},{"text":"[On]","click_event":{"action":"run_command","value":"/function blingedit:particles_on"},"color":"green"},{"text":" ","color":"green"},{"text":"[Off]","click_event":{"action":"run_command","value":"/function blingedit:particles_off"},"color":"red"}]
 gamerule sendCommandFeedback false
