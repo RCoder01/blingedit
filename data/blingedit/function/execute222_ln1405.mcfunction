@@ -42,3 +42,4 @@ execute store result entity @e[limit=1,scores={_age=1}] Pos[0] double 0.001 run 
 execute store result entity @e[limit=1,scores={_age=1}] Pos[1] double 0.001 run scoreboard players get Global _cursor_1
 execute store result entity @e[limit=1,scores={_age=1}] Pos[2] double 0.001 run scoreboard players get Global _cursor_2
 execute if score @s edit matches 1.. at @e[scores={_age=1}] run function blingedit:execute221_ln1716
+execute unless score @s edit matches 1.. run kill @e[scores={_age=1}]

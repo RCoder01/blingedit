@@ -1,3 +1,3 @@
 scoreboard players set @s raycast_select 1
 tellraw @s ["",{"text":"Changed selection to: "},{"text":"Raycast Cursor","color":"yellow"}]
-tellraw @s ["",{"text":"Options: "},{"text":"[Select Inside Blocks]","click_event":{"action":"run_command","value":"/function blingedit:cursor_inside"},"color":"gold"},{"text":" ","color":"gold"},{"text":"[Select Before Blocks]","click_event":{"action":"run_command","value":"/function blingedit:cursor_before"},"color":"gold"}]
+tellraw @s ["",{"text":"Options: "},{"text":"[Select Inside Blocks]","click_event":{"action":"run_command","command":"/function blingedit:cursor_inside"},"color":"gold"},{"text":" ","color":"gold"},{"text":"[Select Before Blocks]","click_event":{"action":"run_command","command":"/function blingedit:cursor_before"},"color":"gold"}]
