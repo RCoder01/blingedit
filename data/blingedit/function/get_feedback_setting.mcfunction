@@ -1,0 +1,1 @@
+execute store result score Global feedback run gamerule sendCommandFeedback

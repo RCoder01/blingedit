@@ -1,4 +1,38 @@
 tellraw @s [""]
-tellraw @s ["",{"text":"BlingEdit: "},{"text":"[Options]","click_event":{"action":"run_command","command":"/function blingedit:options"},"color":"aqua"},{"text":" ","color":"aqua"},{"text":"[Help]","click_event":{"action":"open_url","url":"https://docs.google.com/document/d/13jC-XnCvyyaTaVWAqNc3Gyqu6JEOWAa-xGfhFC8AU50/edit?usp=sharing"},"color":"blue"}]
-tellraw @s ["",{"text":"Move "},{"text":"Box","color":"red"},{"text":": ","color":"gray"},{"text":"[Up]","click_event":{"action":"run_command","command":"/function blingedit:move_up"},"color":"aqua"},{"text":" ","color":"aqua"},{"text":"[Down]","click_event":{"action":"run_command","command":"/function blingedit:move_down"},"color":"aqua"},{"text":" ","color":"aqua"},{"text":"[Left]","click_event":{"action":"run_command","command":"/function blingedit:move_left"},"color":"aqua"},{"text":" ","color":"aqua"},{"text":"[Right]","click_event":{"action":"run_command","command":"/function blingedit:move_right"},"color":"aqua"},{"text":" ","color":"aqua"},{"text":"[Forward]","click_event":{"action":"run_command","command":"/function blingedit:move_forward"},"color":"aqua"},{"text":" ","color":"aqua"},{"text":"[Backward]","click_event":{"action":"run_command","command":"/function blingedit:move_backward"},"color":"aqua"}]
-tellraw @s ["",{"text":"Actions: "},{"text":"[Clone]","click_event":{"action":"run_command","command":"/function blingedit:clone"},"color":"green"},{"text":" ","color":"green"},{"text":"[Fill]","click_event":{"action":"run_command","command":"/function blingedit:fill"},"color":"gold"},{"text":" ","color":"gold"},{"text":"[Replace]","click_event":{"action":"run_command","command":"/function blingedit:replace"},"color":"yellow"},{"text":" ","color":"yellow"},{"text":"[Random]","click_event":{"action":"run_command","command":"/function blingedit:randomize_menu"},"color":"aqua"},{"text":" ","color":"aqua"},{"text":"[Plugin]","click_event":{"action":"run_command","command":"/function blingedit:list_plugins"},"color":"light_purple"},{"text":"   ","color":"light_purple"},{"text":"[Delete]","click_event":{"action":"run_command","command":"/function blingedit:delete"},"color":"red"}]
+tellraw @s [\
+    "",\
+    {"text":"BlingEdit: "},\
+    {"text":"[Options]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 28"},"color":"aqua"},\
+]
+tellraw @s [\
+    "",\
+    {"text":"Move "},\
+    {"text":"Box","color":"red"},\
+    {"text":": ","color":"gray"},\
+    {"text":"[Up]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 1027"},"color":"aqua"},\
+    {"text":" ","color":"aqua"},\
+    {"text":"[Down]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 1023"},"color":"aqua"},\
+    {"text":" ","color":"aqua"},\
+    {"text":"[Left]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 1025"},"color":"aqua"},\
+    {"text":" ","color":"aqua"},\
+    {"text":"[Right]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 1026"},"color":"aqua"},\
+    {"text":" ","color":"aqua"},\
+    {"text":"[Forward]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 1024"},"color":"aqua"},\
+    {"text":" ","color":"aqua"},\
+    {"text":"[Backward]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 1022"},"color":"aqua"}\
+]
+tellraw @s [\
+    "",\
+    {"text":"Actions: "},\
+    {"text":"[Clone]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 2"},"color":"green"},\
+    {"text":" ","color":"green"},\
+    {"text":"[Fill]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 19"},"color":"gold"},\
+    {"text":" ","color":"gold"},\
+    {"text":"[Replace]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 32"},"color":"yellow"},\
+    {"text":" ","color":"yellow"},\
+    {"text":"[Random]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 31"},"color":"aqua"},\
+    {"text":" ","color":"aqua"},\
+    {"text":"[Plugin]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 21"},"color":"light_purple"},\
+    {"text":"   ","color":"light_purple"},\
+    {"text":"[Delete]","click_event":{"action":"run_command","command":"/trigger blingedit_function_trigger set 17"},"color":"red"}\
+]

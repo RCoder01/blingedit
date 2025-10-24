@@ -297,6 +297,7 @@ scoreboard objectives add per3_scratch3 dummy
 scoreboard objectives add per3_scratch2 dummy
 scoreboard objectives add per3_scratch1 dummy
 scoreboard objectives add per3_scratch0 dummy
+scoreboard objectives add blingedit_function_trigger trigger
 team add source
 team modify source color red
 team modify source collisionRule never
@@ -317,4 +318,4 @@ scoreboard objectives remove right_click
 scoreboard objectives add right_click minecraft.used:minecraft.carrot_on_a_stick
 bossbar add progress "Progress"
 bossbar set progress max 100
-say Loaded BlingEdit v1.0.6 by SethBling
+say Loaded BlingEdit v1.0.6 by SethBling, 1.21 update by Coder01
